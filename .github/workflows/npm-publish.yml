@@ -30,6 +30,7 @@ jobs:
           node-version: 18
           check-latest: true
           cache: "pnpm"
+          registry-url: 'https://registry.npmjs.org'
       - name: Download xlsx
         run: |
           curl -L -o xlsx-${{ env.XLSX_VERSION }}.tgz https://cdn.sheetjs.com/xlsx-${{ env.XLSX_VERSION }}/xlsx-${{ env.XLSX_VERSION }}.tgz
